@@ -1,6 +1,5 @@
 import asyncio
 import json
-import time
 
 from fastapi import WebSocket, APIRouter, WebSocketDisconnect
 
@@ -19,7 +18,7 @@ async def ws_factorial(websocket: WebSocket):
         while True:
             message = await websocket.receive_text()
             asyncio.create_task(process_message(websocket, message))
-    except WebSocketDisconnect:
+    except:
         await websocket.close()
         
 async def process_message(websocket: WebSocket, message: str):

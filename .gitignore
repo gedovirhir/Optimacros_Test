@@ -1,5 +1,6 @@
 
 *.pyc
-venv
+.venv
 kekes.txt
-
+.pytest*
+__pycache__

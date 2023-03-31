@@ -4,10 +4,10 @@ index_html = f"""
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Chat</title>
+        <title>Factorial</title>
     </head>
     <body>
-        <h1>WebSocket Chat</h1>
+        <h1>WebSocket Factorial counting</h1>
         <form action="" onsubmit="sendMessage(event)">
             <input type="text" id="messageText" autocomplete="off"/>
             <button>Send</button>
